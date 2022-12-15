@@ -1,0 +1,546 @@
+/* For ALL */
+* {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+html {
+  text-align: center;
+  height: 100%;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(63, 63, 63);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.topbar a {
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.topbar a:hover {
+  color: rgb(180, 180, 180);
+}
+
+.bar-container {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.fa-bars {
+  font-size: 50px;
+  color: rgb(50, 50, 50);
+}
+
+.fa-bars:hover {
+  color: rgb(100, 100, 100);
+}
+
+/* WELCOME */
+
+.parallax-welcome {
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.block-welcome {
+  background: transparent;
+  color: rgb(220, 220, 220);
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-shadow: rgba(0, 0, 0, 4) 0px 14px 28px, rgba(0, 0, 0, 3) 0px 10px 10px;
+}
+
+.block-welcome .website {
+  display: none;
+}
+
+.block-welcome:hover .welcome {
+  display: none;
+}
+
+.block-welcome:hover .website {
+  display: inline;
+  cursor: default;
+}
+
+/* INFO */
+
+#about {
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  font-family: Arial;
+  opacity: 0.7;
+  align-items: center;
+  justify-content: center;
+  height: 950px;
+  letter-spacing: 1px;
+}
+
+.profilepic {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 300px;
+  margin: auto;
+  transition: 1s ease-in-out;
+  box-shadow: 0 5px 10px 0;
+}
+
+.profilepic:hover {
+  border-radius: 0%;
+}
+
+.profilebtn {
+  border: none;
+  padding: 10px 16px 14px;
+  font-family: Arial;
+  font-size: 13px;
+  margin: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(70, 70, 70);
+  border-radius: 100px;
+  letter-spacing: 1px;
+}
+
+.profilebtn img {
+  filter: brightness(0) invert(1);
+  position: relative;
+  top: 4px;
+}
+
+.profilebtn:hover {
+  background-color: rgb(160, 160, 160);
+}
+
+.intro {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  width: 450px;
+  margin-left: 15px;
+  transition: all ease-in-out 1000ms;
+}
+
+/* HONESTLY */
+.parallax-honest {
+  background-image: url("../img/sakura.jpg");
+  background-size: cover;
+  height: 890px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.block-honest {
+  background: #000;
+  color: rgb(200, 200, 200);
+  padding: 40px 40px 50px;
+  width: 600px;
+  height: 400px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  transition: all ease-in-out 1000ms;
+}
+
+.left-honest {
+  width: 400px;
+  margin: auto;
+  transition: all ease-in-out 1000ms;
+}
+
+.right-basicinfo {
+  position: relative;
+  width: 400px;
+  margin: 0px 0px 75px 90px;
+  transition: all ease-in-out 1000ms;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+/* EDUCATION */
+#edu {
+  font-family: Arial;
+  letter-spacing: 1px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(85, 85, 85);
+  width: 100%;
+  height: 1100px;
+}
+
+.block-edu {
+  width: 540px;
+  height: 180px;
+  background-color: rgb(255, 255, 255);
+  margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px, rgba(0, 0, 0, 0.2) 0px 1px 2px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  transition: all ease-in-out 1000ms;
+}
+
+.left-block {
+  width: 180px;
+  height: 180px;
+  background-color: rgb(135, 135, 135);
+  float: left;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  transition: all ease-in-out 1000ms;
+}
+
+.right-block {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: all ease-in-out 1000ms;
+}
+
+.right-block h3 {
+  margin: 40px 0 5px 20px;
+}
+
+.right-block h6 {
+  margin: 0px 0 20px 20px;
+}
+
+.right-block p {
+  margin: 0px 0 0px 20px;
+}
+
+.block-edu {
+  position: relative;
+  transition: all ease-in-out 1000ms;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.block-edu.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* contact me*/
+#contact {
+  font-family: Arial;
+  letter-spacing: 1px;
+  font-weight: 800;
+  background-color: rgb(100, 100, 100);
+  color: rgb(185, 185, 185);
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form {
+  text-align: left;
+  width: 55%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 2px auto 10px 0px;
+  border: 10px;
+  border-radius: 10px;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 10px;
+  margin: 2px auto 10px 0px;
+  border: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 10px auto 30px 0px;
+}
+
+.submitbtn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submitbutton {
+  width: 70px;
+  border: none;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 13px;
+  margin: 0px 25px 0px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: rgb(70, 70, 70);
+  background-color: rgb(236, 236, 236);
+  border-radius: 100px;
+  letter-spacing: 1px;
+}
+
+.submitbutton:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(236, 236, 236);
+}
+
+/* Scroll to top button */
+.scrollTop {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 500ms;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
+}
+
+.scrollTop.show {
+  opacity: 0.4;
+}
+
+.scrollTop:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+/* footer */
+.design {
+  font-size: small;
+  font-weight: 1000;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+/* social media button */
+
+.fa-brands {
+  padding: 10px;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.fa-brands:hover {
+  opacity: 0.3;
+}
+
+/* FOR TABLET */
+@media only screen AND (min-device-width: 768px) AND (max-device-width: 1024px) AND (-webkit-min-device-pixel-ratio: 2) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen AND (min-width: 1024px) AND (max-height: 1366px) AND (-webkit-min-device-pixel-ratio: 1.5) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPHONE 13 Pro Max */
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPhone 13 and 13 Pro */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPhone 13 mini */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPhone X, Xs, XR and 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPhone 11 Pro */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPhone Pro Max */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR iPhone iPhone 6+/6s+/7+/8+ */
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .parallax-honest {
+    background-attachment: scroll;
+  }
+}
+
+/* FOR OTHER MOBILE */
+@media only screen AND (max-width: 700px) {
+  /* TOP BAR FOR MOBILE */
+  .bar-container {
+    display: inline;
+  }
+
+  .intro {
+    width: 300px;
+    transition: all ease-in-out 1000ms;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .topbar.active {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .topbarelement {
+    margin: 15px;
+  }
+
+  .parallax-welcome {
+    background-attachment: scroll;
+  }
+
+  .block-honest {
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    transition: all ease-in-out 1000ms;
+  }
+
+  .left-honest {
+    width: 300px;
+    margin: auto;
+    transition: all ease-in-out 1000ms;
+  }
+
+  .right-basicinfo {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    transition: all ease-in-out 300ms;
+  }
+  .block-edu {
+    width: 360px;
+    height: 220px;
+  }
+
+  .left-block {
+    width: 120px;
+    height: 220px;
+  }
+
+  .right-block {
+    height: 220px;
+  }
+}

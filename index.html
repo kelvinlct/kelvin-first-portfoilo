@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="./js/myscript.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Kelvin's Profile</title>
+  </head>
+
+  <body>
+    <!-- Top Bar -->
+
+    <header>
+      <div class="topbar">
+        <div class="topbarelement"><a href="#about">ABOUT ME</a></div>
+        <div class="topbarelement"><a href="#info">INFOGRAPHIC</a></div>
+        <div class="topbarelement"><a href="#edu">EDUCATION</a></div>
+        <div class="topbarelement"><a href="#contact">CONTACT ME</a></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Welcome -->
+      <div class="parallax-welcome">
+        <div class="bar-container"><div class="fa-solid fa-bars"></div></div>
+        <div class="block-welcome">
+          <span class="welcome">WELCOME</span>
+          <span class="website">TO MY WEBSITE</span>
+        </div>
+      </div>
+
+      <!-- About Me -->
+      <section id="about">
+        <div class="profile">
+          <br />
+          <img class="profilepic" src="./img/myself3.jpg" />
+          <h1>CHUNG TING LAU</h1>
+          <p>Software Developer</p>
+          <a href="./files/ChungTingLauResume.pdf" download>
+            <button class="profilebtn resume">
+              <img src="./img/file-download.png " height="18px" />
+              <span>RESUME</span>
+            </button>
+          </a>
+          <a href="#contact">
+            <button class="profilebtn" href="#contact">
+              <img src="./img/mail-forward.png " height="18px" />
+              <span>CONTACT ME</span>
+            </button>
+          </a>
+          <br />
+          <br />
+
+          <p class="intro" align="justify">
+            Hello, My name is Chung Ting Lau, (Kelvin). I am a Seneca Computer
+            Programming Student. I primarily code in C++ and JavaScript. I am
+            also passionate about photography, video games and exploring new
+            ideas.
+          </p>
+          <p class="intro" align="justify">
+            I'm always lookout for contributing projects and learning more about
+            development world, so please don't hesitate to reach out. Feel free
+            to chat with me. Thanks for taking time to read my introduction.
+          </p>
+        </div>
+      </section>
+
+      <!-- Honesty Statment -->
+      <section id="info">
+        <div class="parallax-honest">
+          <div class="block-honest">
+            <div class="left-honest">
+              <h3 style="letter-spacing: 2px">Honesty Statement</h3>
+              <p align="justify">
+                I declare that my assessment is wholly my own work in accordance
+                with Seneca Academic Policy. No part of this assessment has been
+                copied manually or electronically from any other source
+                (including web sites) except for the information supplied by the
+                WEB222 instructors and / or made available in this assessment
+                for my use. I also declare that no part of this assignment has
+                been distributed to other students.
+              </p>
+              <br />
+              <p>Date: Dec 14,2022</p>
+            </div>
+            <div class="right-basicinfo">
+              <h3 style="letter-spacing: 2px">Basic Information</h3>
+              <table style="width: 100%">
+                <tr>
+                  <th>Name:</th>
+                  <td>Chung Ting Lau</td>
+                </tr>
+                <tr>
+                  <th>Student ID:</th>
+                  <td>161423215</td>
+                </tr>
+                <tr>
+                  <th>Email:</th>
+                  <td>clau50@myseneca.ca</td>
+                </tr>
+                <tr>
+                  <th>Language:</th>
+                  <td>English, Cantonese</td>
+                </tr>
+                <tr>
+                  <th>Course:</th>
+                  <td>WEB222</td>
+                </tr>
+                <tr>
+                  <th>Class Section:</th>
+                  <td>NFF</td>
+                </tr>
+                <tr>
+                  <th>Instructor:</th>
+                  <td>Mark Meritt Jr.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="edu">
+        <br />
+        <h1 style="margin: 100px 0px 50px">Education</h1>
+        <div class="block-edu">
+          <div class="left-block">
+            <h4>Diploma</h4>
+            <p>2022 - NOW</p>
+          </div>
+          <div class="right-block">
+            <h3>Ontario College Diploma</h3>
+            <h6>SENECA COLLEGE</h6>
+            <p>Computer Programming (CPP)</p>
+            <p>Two-year diploma program</p>
+            <p></p>
+          </div>
+        </div>
+        <div class="block-edu">
+          <div class="left-block">
+            <h4>Bachelor's Degree</h4>
+            <p>2012 - 2014</p>
+          </div>
+          <div class="right-block">
+            <h3>Bachelor of Social Sciences</h3>
+            <h6>HONG KONG BAPTIST UNIVERSITY</h6>
+            <p>Integrated Communication Management</p>
+            <p>Two-year Bachelor's Degree program</p>
+          </div>
+        </div>
+        <div class="block-edu">
+          <div class="left-block">
+            <h4>Associate Degree</h4>
+            <p>2010 - 2012</p>
+          </div>
+          <div class="right-block">
+            <h3>Associate of Arts</h3>
+            <h6>HONG KONG BAPTIST UNIVERSITY</h6>
+            <p>Creative Commutation</p>
+            <p>Two-year Associate Degree program</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section id="contact">
+        <br />
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+          <form id="mainform" method="post" action="https://httpbin.org/post">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Please enter your name"
+              required
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Please enter your email"
+              required
+            />
+
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="addresss"
+              placeholder="Please enter your address"
+              required
+            />
+
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              list="canadianCities"
+              placeholder="Please enter your city"
+              required
+            />
+            <datalist id="canadianCities">
+              <option value="Toronto"></option>
+              <option value="Vancouver"></option>
+              <option value="Calgary"></option>
+              <option value="Montreal "></option>
+              <option value="Quebec City"></option>
+              <option value="Winnipeg"></option>
+              <option value="Hamilton"></option>
+              <option value="London"></option>
+              <option value="Edmonton"></option>
+              <option value="Saskatoon"></option>
+              <option value="Regina"></option>
+              <option value="Ottawa"></option>
+              <option value="Halifax"></option>
+              <option value="St. John's"></option>
+              <option value="Yellowknife"></option>
+              <option value="Charlottetown"></option>
+              <option value="Whitehorse"></option>
+            </datalist>
+
+            <lable for="postalcode">Postal code</lable>
+            <input
+              name="postalcode"
+              type="text"
+              id="postalcode"
+              placeholder="Please enter your Postal Code"
+              required
+            />
+
+            <lable for="reason">What is this about? </lable>
+            <br />
+            <input type="radio" name="reason" id="question" value="question" />
+            <lable for="question">Question</lable><br />
+
+            <input type="radio" name="reason" id="comment" value="comment" />
+            <lable for="comment">Comment</lable><br />
+
+            <input type="radio" name="reason" id="hiring" value="hiring" />
+            <lable for="hiring">Hiring</lable><br />
+            <div id="hourlyrate"></div>
+            <lable for="message">Message</lable><br />
+            <textarea name="message" id="message" rows="8" required></textarea>
+            <label for="rate">Rate my website from 1 to 10:</label><br />
+            <input type="number" id="rate" name="rate" min="1" max="10" />
+            <div class="submitbtn-container">
+              <button class="submitbutton" type="submit">Submit</button>
+              <button class="submitbutton" type="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="design">Designed & Developed by Chung Ting Lau 2022</p>
+      <nav class="bottombar">
+        <a
+          href="https://www.facebook.com/kelvlau/"
+          class="fa-brands fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/kelvinctlau"
+          class="fa-brands fa-twitter"
+        ></a>
+        <a
+          href="https://linkedin.com/in/kelvinctl/"
+          class="fa-brands fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/currylau/"
+          class="fa-brands fa-instagram"
+        ></a>
+        <a href="https://github.com/kelvinlct/" class="fa-brands fa-github">
+        </a>
+      </nav>
+
+      <br />
+    </footer>
+    <div onclick="scrollToTop()" class="scrollTop">
+      <img class="uparrow" src="./img/arrow-up.png" height="30px" />
+    </div>
+  </body>
+</html>
